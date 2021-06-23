@@ -1,14 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/venue/list",
-      "has": [
-        {
-          "type": "query",
-          "key": "event",
-          "value": "(?<eventQuery>.*)"
-        }
-      ],
+      "source": "/venue/list?event=(?<eventQuery>.*)",
       "destination": "https://venue.bmssearch.net/:eventQuery*",
       "permanent": false
     }
